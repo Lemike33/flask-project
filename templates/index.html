@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+    Main page
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Личная информация:</h4>
+          <h4 class="mt-2 ml-5">Фото:</h4>
+          <img src="/static/images/me.jpg" class="img-thumbnail"><br>
+
+          <h5>Личные данные</h5>
+          <p>Имя: Михаил </p>
+          <p>Пол: мужской </p>
+          <p>Возраст: 33 </p>
+          <p>Город: СПБ2</p>
+          <h5>Контакты</h5>
+          <details open class="block">
+            <summary>Телефон: 8(962)712-55-62</summary>
+              <p>Звонить с 8:30 до 23:30</p>
+          </details>
+          <p>Email: lemike33@mail.ru </p>
+          <p>GitHub: lemike33 </p>
+        </div>
+          <aside class="col-md-8">
+              <h4>Мои сертификаты:</h4>
+              <img src="/static/images/diploma.png" class="img-thumbnail">
+              <p>Диплом о прохождении курса "Профессия Python разработчик"</p><hr>
+              <img src="/static/images/Pyt_Tkinter_Django.png" class="img-thumbnail"><hr>
+              <img src="/static/images/JavaScript.png" class="img-thumbnail">
+          </aside>
+      </div>
+    </div>
+{% endblock %}

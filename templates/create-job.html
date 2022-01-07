@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    Create new Job
+{% endblock %}
+
+
+{% block content %}
+    <div class="container mt-5">
+      <h1>Добавить новое место работы:</h1>
+      <form method="post">
+        <label>Укажите компанию:</label>
+            <input type="text" name="company" id="company" class="form-control"><br>
+        <label>Опишите детали:</label>
+            <textarea name="description" id="description" class="form-control"></textarea><br>
+        <label>Начало работы:
+            <input type="date" name="date_start" id="date_start" class="form-control"></label><br>
+        <label>Окончание работы:
+            <input type="date" name="date_end" id="date_end" class="form-control"></label><br>
+        <input type="submit" class="btn btn-info" value="Создать">
+
+      </form>
+    </div>
+{% endblock %}
